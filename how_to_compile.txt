@@ -1,0 +1,8 @@
+For Compiling Lex file only:
+flex file_name.l
+gcc lex.yy.c -o file_name
+
+For Compiling Lex & Yacc file both:
+flex file_name.l
+bison -dy file_name.y
+gcc lex.yy.c y.tab.c -o file_name
